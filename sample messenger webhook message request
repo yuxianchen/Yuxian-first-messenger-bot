@@ -1,0 +1,2 @@
+curl -X GET "https://yuxian-first-messenger-bot.herokuapp.com/webhook?hub.verify_token='yuxianwebhooktest'&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
+curl -H "Content-Type: application/json" -X POST "https://yuxian-first-messenger-bot.herokuapp.com/webhook" -d '{"object": "page", "entry": [{"messaging": [{"message": "TEST_MESSAGE", "sender": {"id": "1234"}, "recipient": {"id":"6789"}}]}]}'
